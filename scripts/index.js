@@ -10,3 +10,9 @@ const handleClick = function (t) {
   // un "this" significativo
   console.log("BOTTONE CLICCATO", t)
 }
+
+// questo è comodissimo quando avete già l'elemento da rendere cliccabile/hoverabile/
+//submittabile in HTML!
+// se però l' elemento in HTML ancora non esiste(perchè intendete crearlo via JS)
+// questa tecnica non è più efficace!
+// to be continued
