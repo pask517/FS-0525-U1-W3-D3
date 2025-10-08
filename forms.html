@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I FORM IN HTML+JS</title>
+    <style>
+      .input-margin {
+        margin: 0.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MANIPOLAZIONE DEI FORM IN JS</h1>
+    </header>
+    <main>
+      <form id="main-form">
+        <div class="input-margin">
+          <label for="firstname">Nome</label>
+          <input id="firstname" type="text" placeholder="Mario" required />
+        </div>
+        <div class="input-margin">
+          <label for="lastname">Cognome</label>
+          <input id="lastname" type="text" placeholder="Rossi" required />
+        </div>
+        <div class="input-margin">
+          <label for="age">Età</label>
+          <input id="age" type="number" min="18" max="100" required />
+        </div>
+        <div class="input-margin">
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+        </div>
+        <div class="input-margin">
+          <label for="gender">Sesso</label>
+          <select id="gender" required>
+            <option>Uomo</option>
+            <option>Donna</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div class="input-margin">
+          <label for="bio">Raccontaci di te</label>
+          <textarea id="bio" row="5" col="50"></textarea>
+        </div>
+        <div>
+          <button type="button">NON FARE NIENTE</button>
+          <button>INVIA</button>
+          <!-- un button inserito all'interno di un form assume automaticamente
+             un type="submit" -->
+          <!-- per "neutralizzare" l'effetto "submit" di un button dentro un form,gli cambio il type="" -->
+        </div>
+      </form>
+    </main>
+    <script src="scripts/forms.js"></script>
+  </body>
+</html>
